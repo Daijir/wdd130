@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    
+    --primary-color: #CFFCFF;
+    --secondary-color: #AAEFDF;
+    --accent1-color: #9EE37D;
+    --accent2-color: #63C132;
+
+    --heading-font: 'Bungee Spice';
+    --paragraph-font: 'Oswald';
+
+    --nav-background-color: #fff;
+    --nav-link-color: blue;
+    --nav-hover-link-color: orange;
+    --nav-hover-background-color: #CCCCCC;
+
+    --page-width: 800px;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--nav-background-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+main {
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    right: 10px;
+    z-index: 1;
+}
+
+.hero h1 {
+    position: relative;
+    font-family: var(--heading-font);
+    color: white;
+    margin-top: 0;
+    z-index: 2;
+}
+
+.hero article {
+    position: relative;
+    text-align: left;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.hero article img {
+    position: relative;
+    float: right;
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.hero section {
+    margin-top: 20px;
+}
+
+.hero section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: var(--nav-link-color);
+}
+
+.sociallinks {
+    margin-top: 10px;
+}
+
+.sociallinks a {
+    margin: 0 5px;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: 30px;
+}
