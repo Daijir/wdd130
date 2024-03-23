@@ -91,7 +91,7 @@ header, footer {
 
 header, .grid, footer {
     max-width: 840px;
-    margin: 1px;
+    margin: 0 auto;
 }
 
 .grid {
