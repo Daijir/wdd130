@@ -23,21 +23,44 @@ body {
     font-family: var(--paragraph-font);
     background-color: var(--primary-color);
     color: var(--nav-link-color);
-    margin: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
     padding: 0;
 }
 
 header {
     background-color: var(--nav-background-color);
     padding: 10px 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     justify-content: space-between;
 }
 
+/*create a well designed header that will also be used on 
+the other pages of this rafting site to provide a common 
+look and feel across the site.*/
+
+header img {
+    width: 50%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+header nav {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 40px;
+}
+
 header nav a {
+    justify-self: center;
     color: var(--nav-link-color);
     text-decoration: none;
-    margin-right: 20px;
+    text-size-adjust: auto;
 }
 
 header nav a:hover {
@@ -122,3 +145,30 @@ footer p {
     width: 30px;
     height: 30px;
 }
+
+
+/* Style the History section elements as needed using a CSS 
+layout method of your choice and add content. */
+#history {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+/* Style the Adventures section of five images to span the 
+section horizontal using a CSS layout method. */
+#adventure {
+    text-align: center;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+
