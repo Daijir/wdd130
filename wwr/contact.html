@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description" content="You can contact us through this page.">
+    <meta name="author" content="Daijiro Sagane">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo Image">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <h1>Contact Us</h1>
+            </div>
+    
+            <div class="right">
+                <h2>Send a Message</h2>
+                <p>Name: White Water Rafting</p>
+                <p>Phone: 999-999-9999</p>
+                <p>Email: <a href="mailto:">contact@whitewater.com</a></p>
+            </div>
+            <div class="map-container">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5592.375417448893!2d-75.78506694929555!3d40.98405559742038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c500f860f2b117%3A0xfcf397e50a28c7ec!2sWhitewater%20Challengers!5e1!3m2!1sen!2sjp!4v1711797628645!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="images">
+            <figure>
+                <img src="images/profile1.png" alt="Employee 1">
+                <figcaption>Employee 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/profile2.png" alt="Employee 2">
+                <figcaption>Employee 2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/profile3.png" alt="Employee 3">
+                <figcaption>Employee 3</figcaption>
+            </figure>
+        </div>
+
+        <form>
+            <fieldset>
+                <div class="form-item">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+                <div class="form-item">
+                    <label>Purpose of Message:</label><br>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" checked>
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+                </div>
+
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>©︎ 2024 White Water Rafting | Daijiro Sagane</p>
+        <a href="#" onclick="showImage()">Show Layout Image</a>
+        <img id="myImage" src="images/layout.png" alt="layout image">
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+        </nav>
+    </footer>
+
+    <script>
+        function showImage() {
+            document.getElementById('myImage').style.display = 'block';
+            return false;
+        }
+    </script>
+
+</body>
+</html>

@@ -170,5 +170,100 @@ section horizontal using a CSS layout method. */
     height: auto;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left, .right {
+    padding: 20px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.images img {
+    width: 300px;
+    height: 350px;
+}
+
+#myImage {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-item label {
+    flex-basis: 30%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    flex-grow: 1; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+.checkbox-container label {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align items vertically */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
