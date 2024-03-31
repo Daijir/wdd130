@@ -263,7 +263,3 @@ input[type="submit"] {
     border-radius: 5px;
     color: pointer;
 }
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
