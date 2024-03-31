@@ -256,10 +256,3 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center; /* Align items vertically */
 }
-
-input[type="submit"] {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    color: pointer;
-}
