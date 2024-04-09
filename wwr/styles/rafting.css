@@ -60,6 +60,7 @@ header nav a {
     justify-self: center;
     color: var(--nav-link-color);
     text-decoration: none;
+    font-size: 30px;
     text-size-adjust: auto;
 }
 
@@ -255,4 +256,67 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: center; /* Align items vertically */
+}
+
+/*trips.css*/
+
+.trips_image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.textbox {
+    padding: 50px;
+    margin: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.textbox h1 {
+    margin: 20px auto;
+}
+
+.textbox h3 {
+    margin: 40px 20px;
+    size: 50px;
+    color: rgba(128, 128, 128, 1);
+    margin: 10px 70px;
+}
+
+.line {
+    height: 2px;
+    background-color: rgba(128, 128, 128, 0.5);
+    max-width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 50px auto;
+}
+
+.photo-box {
+    width: 30%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    background-color: white;
+    border-radius: 5px;
+}
+
+.photo-box img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+p {
+    color: rgba(128, 128, 128, 1);
+    margin: 0; 
 }
