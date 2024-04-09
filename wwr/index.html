@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description" content="This page is the home page of white water rafting company">
+    <meta name="author" content="Daijiro Sagane">
 </head>
 <body>
-    
+    <header>
+        <img src="images/logo.png" alt="Logo Image">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/index_hero.png" alt="Rafting Hero Image">
+            <h1>Welcome to White Water Rafting!</h1>
+        </section>
+        
+        <section class="newsletter">
+            <h2>Subscribe to Our News Letter</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section class="cta">
+            <h2>Ready for an Adventure?</h2>
+            <p>Explore our thrilling rafting trips and book your next adventure today!</p>
+            <a href="trips.html">Discover Trips</a>
+        </section>
+
+        <section class="grid-layout">
+            <div class="grid-item">
+                <img src="images/rafting_01.png" alt="Rafting Image 1">
+                <h3>Experience the Thrill</h3>
+                <p>Join us for an adrenaline-pumping journey through the river's rapids.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/rafting_02.png" alt="Rafting Image 2">
+                <h3>Connect with Nature</h3>
+                <p>Discover the serene beauty of the River Valley and immerse yourself in the natural wonders.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©︎ 2024 White Water Rafting | Daijiro Sagane</p>
+        <a href="#" onclick="showImage()">Show Layout Image</a>
+        <img id="myImage" src="images/index_layout.png" alt="layout image">
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+        </nav>
+    </footer>
+
+    <script>
+        function showImage() {
+            document.getElementById('myImage').style.display = 'block';
+            return false;
+        }
+    </script>
 </body>
 </html>
